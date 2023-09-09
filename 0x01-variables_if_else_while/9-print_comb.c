@@ -1,22 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * main - prints numbers separated by ,(comma),
- *
- * Return: 0
- */
+  * main - entry point
+  * Retuen: Always 0 (success)
+*/
+
 int main(void)
 {
-	int n;
 
-	for (n = 48; n < 58; n++)
-		putchar(n);
-	if (n != 57)
-	{
-	putchar(',');
-	putchar(' ');
+        int d;
+        for (d = '0' ; d <= '9' ; d++)
+        {
+        putchar(d);
+        if (d != '9')
+        {
+        putchar(',');
+        putchar(',');
+        }
+        }
+        putchar('\n');
+        return (0);
 }
-	putchar('\n');
-
-	return (0);
-
-	}
