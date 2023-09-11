@@ -3,10 +3,10 @@
 #include <time.h>
 
 /*
-  * main - Entry point
+  * main - prints numbers separated by ,(comma),
+  *
   * Return: Always 0 (Success)
 */
-
 int main(void)
 {
 int d;
