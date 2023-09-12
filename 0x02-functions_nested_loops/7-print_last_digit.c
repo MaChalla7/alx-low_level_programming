@@ -1,0 +1,15 @@
+#include "main.h"
+/**
+* print_last_digit - prints the last digit
+* @n: the number
+* return: value of the last digits(id)
+*/
+
+int print_last_digit(int n)
+{
+int id = n % 10;
+if (id < 0)
+id *= -1;
+_putchar(id + '0');
+return (0);
+}
