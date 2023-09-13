@@ -7,9 +7,14 @@
 
 int print_last_digit(int n)
 {
-int id = n % 10;
-if (id < 0)
-id *= -1;
-_putchar(id + '0');
-return (0);
+
+	int last;
+	
+	last = n % 10;
+	if (last < 0)
+{
+	last = last * -1;
+}
+	_putchar(last + '0');
+	return (last);
 }
