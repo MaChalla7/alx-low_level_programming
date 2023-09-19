@@ -1,12 +1,14 @@
 #include "main.h"
+
 /**
-* puts2 - function prints other character of a string
-* @str: input character
-* Return: print
-*/
+ * puts2 - function prints other character of a string
+ *@str: input character
+ * Return: print
+ */
 
 void puts2(char *str)
-{int a = 0;
+{
+int a = 0;
 
 for (; str[a] != '\0'; a++)
 {
@@ -19,5 +21,5 @@ else
 continue;
 }
 }
-_putcahr('\n')
+_putchar('\n');
 }
