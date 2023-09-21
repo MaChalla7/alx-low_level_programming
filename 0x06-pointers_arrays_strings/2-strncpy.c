@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * _strncpy - Copy a string from index 0 of 'dest'
