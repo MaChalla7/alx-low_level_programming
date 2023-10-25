@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * print_listint - Prints elements of a Linked List.
- * @h: head of the List.
+ * print_listint - Prints all Elements of Linked List.
+ * @h: Head of the list.
  *
  * Return: The number of nodes.
  */
