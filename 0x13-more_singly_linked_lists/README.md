@@ -1,3 +1,3 @@
-more singly linked lists
 
-Solution to 0x013-more stingly linked list
+
+0x13. C - More singly linked lists
