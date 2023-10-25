@@ -1,0 +1,32 @@
+#include "lists.h"
+
+/**
+ * add_nodeint_end - Adds a node to the Ed of a Linked list
+ * @head: A pointer to the address of the head of the list
+ * @n: The Integer for the New node to contain
+ *
+ * Return: Address of the newly added node
+ */
+listint_t *add_nodeint_end(listint_t **head, const int n)
+{
+	listint_t *new;
+	listint_t *last = *head;
+
+	new = malloc(sizeof(listint_t));
+	if (new != NULL)
+	{
+		new->n = n;
+		new->next = NULL;
+	}
+	else
+		return (NULL);
+	if (last != NULL)
+	{
+		while (last->next != NULL)
+			last = last->next;
+		last->next = new;
+	}
+	else
+		*head = new;
+	return (new);
+}
